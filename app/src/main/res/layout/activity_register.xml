@@ -15,9 +15,9 @@
         android:hint="@string/email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etPassword"
-        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
 
     <EditText
         android:id="@+id/etName"
@@ -28,9 +28,9 @@
         android:hint="@string/your_name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etEmail"
-        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -42,9 +42,9 @@
         android:hint="@string/type_password"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etRePassword"
-        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
 
     <View
         android:id="@+id/view2"
@@ -106,14 +106,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnSignIn"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/rounded_stroke_background"
-        android:text="@string/sign_in"
+        android:text="@string/register"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
@@ -129,9 +129,9 @@
         android:drawableRight="@drawable/ic_action_name"
         android:hint="@string/type_password"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
-        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
-        app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
 
     <TextView
         android:id="@+id/textView3"
