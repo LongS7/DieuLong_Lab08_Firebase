@@ -68,7 +68,7 @@
 
     <Button
         android:id="@+id/btnForgotPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_stroke_no_background"
@@ -77,8 +77,8 @@
         android:textColor="#7A000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
 
     <Button
         android:id="@+id/btnSignIn"
@@ -88,6 +88,7 @@
         android:textSize="18sp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
         android:textColor="@color/white"
         android:background="@drawable/rounded_stroke_background"
         app:layout_constraintBottom_toTopOf="@+id/btnForgotPassword"
