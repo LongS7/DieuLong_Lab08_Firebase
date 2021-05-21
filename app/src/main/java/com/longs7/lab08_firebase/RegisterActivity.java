@@ -33,6 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             if(name.isEmpty() || email.isEmpty() || pass.isEmpty() || rePass.isEmpty()){
                 Toast.makeText(this, "Please fill all of field!", Toast.LENGTH_SHORT).show();
+                return;
             }
             
             if(!pass.equals(rePass))
@@ -47,6 +48,12 @@ public class RegisterActivity extends AppCompatActivity {
                         })
                         .addOnFailureListener(e -> Toast.makeText(this, "Invalid email address!", Toast.LENGTH_SHORT).show());
             }
+        });
+
+        findViewById(R.id.tvSignIn).setOnClickListener(v -> {
+            Intent intent = new Intent(RegisterActivity.this, SignInActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

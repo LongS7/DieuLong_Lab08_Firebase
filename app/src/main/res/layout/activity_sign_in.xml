@@ -96,6 +96,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword" />
+
+    <EditText
         android:id="@+id/etPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -107,18 +119,6 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
         app:layout_constraintStart_toStartOf="@+id/btnSignIn" />
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etPassword"
-        app:layout_constraintEnd_toEndOf="@+id/etPassword"
-        app:layout_constraintStart_toStartOf="@+id/etPassword" />
 
     <ImageView
         android:id="@+id/imageView4"
